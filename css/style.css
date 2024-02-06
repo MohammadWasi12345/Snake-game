@@ -24,6 +24,32 @@
     grid-template-columns: repeat(18,1fr);
    
 }
+#mode {
+    position: absolute;
+    top: 40px;
+    right: 144px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Single Day', cursive;
+
+}
+
+.btn {
+    background: linear-gradient(green, yellow);
+    border: 2px solid green;
+    border-radius: 9px;
+    color: purple;
+    font-size: 20px;
+    font-family: 'Single Day', cursive;
+    padding: 3px;
+
+
+}
+.btn:hover {
+    font-size: 25px;
+    border: 2px solid white;
+    transition: 0.5s ease-in;
+}
 #score {
     position: absolute;
     right:200px;
