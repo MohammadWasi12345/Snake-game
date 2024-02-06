@@ -22,6 +22,20 @@ function main(currtime) {
     lastPainTime = currtime;
     gameEngine();
 }
+//game modes
+let easy = document.getElementById('btn1') as HTMLElement;
+let medium = document.getElementById('btn2') as HTMLElement;
+let hard = document.getElementById('btn3') as HTMLElement;
+
+easy.addEventListener("click",()=>{
+     speed = 5;
+});
+medium.addEventListener("click",()=>{
+    speed = 9;
+});
+hard.addEventListener("click",()=>{
+    speed = 19;
+});
 function isCollide(snake) {
     // if collided with its body
     for (let i = 1; i < snake.length; i++) {
